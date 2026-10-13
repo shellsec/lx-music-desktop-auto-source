@@ -27,15 +27,22 @@ After install, Auto Switch is on by default, and the built-in sources are ready 
 
 ## Download
 
-Local build outputs in `build/`, version **2.12.6**. This repository (`shellsec/lx-music-desktop-auto-source`) does not publish them on its Release.
+Installers are on the [v2.12.6-auto-source Release](https://github.com/shellsec/lx-music-desktop-auto-source/releases/tag/v2.12.6-auto-source). Version **2.12.6** includes built-in sources and turns Auto Switch on by default.
 
-- Windows installer: `lx-music-desktop-v2.12.6-x64-Setup.exe`
-- Windows portable (7z): `lx-music-desktop-v2.12.6-win_x64-green.7z`
-- macOS (Apple silicon, arm64): `lx-music-desktop-2.12.6-arm64.dmg`
-- macOS (Intel, x64): `lx-music-desktop-2.12.6-x64.dmg`
+The Windows portable package is a 7z archive. After extracting it, run `lx-music-desktop.exe` in that folder.
 
-[GitHub Releases](https://github.com/lyswhut/lx-music-desktop/releases) point to upstream `lyswhut/lx-music-desktop`.
+Accelerated download prefixes the original asset URL with `https://gh-proxy.com/`.
 
-### Accelerated download
+### Original links
 
-This applies to the original URL of a Release asset: prefix that URL with `https://gh-proxy.com/`. Open the Releases page, copy an asset's original address, then add the prefix. An original address looks like `https://github.com/lyswhut/lx-music-desktop/releases/download/<tag>/<filename>`; the accelerated URL is `https://gh-proxy.com/` followed by that original address.
+- Windows installer: https://github.com/shellsec/lx-music-desktop-auto-source/releases/download/v2.12.6-auto-source/lx-music-desktop-v2.12.6-x64-Setup.exe
+- Windows portable 7z: https://github.com/shellsec/lx-music-desktop-auto-source/releases/download/v2.12.6-auto-source/lx-music-desktop-v2.12.6-win_x64-green.7z
+- Mac arm64 dmg: https://github.com/shellsec/lx-music-desktop-auto-source/releases/download/v2.12.6-auto-source/lx-music-desktop-2.12.6-arm64.dmg
+- Mac Intel dmg: https://github.com/shellsec/lx-music-desktop-auto-source/releases/download/v2.12.6-auto-source/lx-music-desktop-2.12.6-x64.dmg
+
+### Accelerated links
+
+- Windows installer: https://gh-proxy.com/https://github.com/shellsec/lx-music-desktop-auto-source/releases/download/v2.12.6-auto-source/lx-music-desktop-v2.12.6-x64-Setup.exe
+- Windows portable 7z: https://gh-proxy.com/https://github.com/shellsec/lx-music-desktop-auto-source/releases/download/v2.12.6-auto-source/lx-music-desktop-v2.12.6-win_x64-green.7z
+- Mac arm64 dmg: https://gh-proxy.com/https://github.com/shellsec/lx-music-desktop-auto-source/releases/download/v2.12.6-auto-source/lx-music-desktop-2.12.6-arm64.dmg
+- Mac Intel dmg: https://gh-proxy.com/https://github.com/shellsec/lx-music-desktop-auto-source/releases/download/v2.12.6-auto-source/lx-music-desktop-2.12.6-x64.dmg

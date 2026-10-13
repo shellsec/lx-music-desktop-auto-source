@@ -85,16 +85,25 @@
 
 ### 下载
 
-本次编译产物在本地 `build` 目录，版本 **2.12.6**。本仓库 `shellsec/lx-music-desktop-auto-source` 的 Release 里没有这些文件。
+安装包在 [v2.12.6-auto-source Release](https://github.com/shellsec/lx-music-desktop-auto-source/releases/tag/v2.12.6-auto-source)。版本 **2.12.6**，内置音源，默认自动切换。
 
-- Windows 安装包：`lx-music-desktop-v2.12.6-x64-Setup.exe`
-- Windows 免安装：`lx-music-desktop-v2.12.6-win_x64-green.7z`
-- macOS（Apple 芯片，arm64）：`lx-music-desktop-2.12.6-arm64.dmg`
-- macOS（Intel，x64）：`lx-music-desktop-2.12.6-x64.dmg`
+Windows 免安装包是 7z。解压后运行目录里的 `lx-music-desktop.exe`。
 
-[GitHub Releases](https://github.com/lyswhut/lx-music-desktop/releases) 指向上游 `lyswhut/lx-music-desktop`。
+加速下载是在资源原始链接前加 `https://gh-proxy.com/`。
 
-加速下载用于 Release 资源的原始 URL：在原始链接前面加上 `https://gh-proxy.com/`。打开上面的 Releases 页面，复制某个资源的原始地址后再加此前缀。原始地址形如 `https://github.com/lyswhut/lx-music-desktop/releases/download/<版本>/<文件名>`，加速后为 `https://gh-proxy.com/` 接上该原始地址。
+#### 原始直链
+
+- Windows 安装包：https://github.com/shellsec/lx-music-desktop-auto-source/releases/download/v2.12.6-auto-source/lx-music-desktop-v2.12.6-x64-Setup.exe
+- Windows 免安装 7z：https://github.com/shellsec/lx-music-desktop-auto-source/releases/download/v2.12.6-auto-source/lx-music-desktop-v2.12.6-win_x64-green.7z
+- Mac arm64 dmg：https://github.com/shellsec/lx-music-desktop-auto-source/releases/download/v2.12.6-auto-source/lx-music-desktop-2.12.6-arm64.dmg
+- Mac Intel dmg：https://github.com/shellsec/lx-music-desktop-auto-source/releases/download/v2.12.6-auto-source/lx-music-desktop-2.12.6-x64.dmg
+
+#### 加速直链
+
+- Windows 安装包：https://gh-proxy.com/https://github.com/shellsec/lx-music-desktop-auto-source/releases/download/v2.12.6-auto-source/lx-music-desktop-v2.12.6-x64-Setup.exe
+- Windows 免安装 7z：https://gh-proxy.com/https://github.com/shellsec/lx-music-desktop-auto-source/releases/download/v2.12.6-auto-source/lx-music-desktop-v2.12.6-win_x64-green.7z
+- Mac arm64 dmg：https://gh-proxy.com/https://github.com/shellsec/lx-music-desktop-auto-source/releases/download/v2.12.6-auto-source/lx-music-desktop-2.12.6-arm64.dmg
+- Mac Intel dmg：https://gh-proxy.com/https://github.com/shellsec/lx-music-desktop-auto-source/releases/download/v2.12.6-auto-source/lx-music-desktop-2.12.6-x64.dmg
 
 使用常见问题请参阅[桌面版常见问题](https://lyswhut.github.io/lx-music-doc/desktop/faq)。
 
