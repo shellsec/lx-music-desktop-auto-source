@@ -1,0 +1,17 @@
+name: Publish NPM Version Info
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  dispatch:
+    if: github.repository == 'lyswhut/lx-music-desktop'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repository Dispatch
+        uses: peter-evans/repository-dispatch@v4
+        with:
+          token: ${{ secrets.PAT }}
+          repository: lyswhut/lx-music-desktop-version-info
+          event-type: npm-release

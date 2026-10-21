@@ -1,0 +1,15 @@
+LX Music Enhanced / 洛雪增强版
+
+Based on LX Music Desktop by lyswhut:
+https://github.com/lyswhut/lx-music-desktop
+Copyright notices of the original authors are retained in LICENSE and source files.
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+Modifications in this distribution:
+- Removed bundled custom source scripts and fixed source catalog addresses.
+- Empty custom source list and disabled multi-source switching on fresh installs.
+- Ordered failover uses only user-imported sources.
+- Subscription addresses persist only after user input. Exhausted automatic failover
+  checks the saved subscription once per song with a 60-second cooldown, and retries
+  one extra round only when catalog or script contents change. Manual updates remain available.
+- Updated branding, documentation and distribution checks.

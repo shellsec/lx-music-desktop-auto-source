@@ -1,0 +1,56 @@
+name: Windows Release
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - run: npm run test:sources
+      - run: npm run lint
+      - run: npm run build
+      - run: npm run pack:win:setup:x64
+      - run: npm run pack:win:7z:x64
+      - run: npm run pack:win:portable:x64
+      - name: Upload Windows packages
+        uses: actions/upload-artifact@v4
+        with:
+          name: windows-x64
+          path: |
+            build/*-Setup.exe
+            build/*-green.7z
+            build/*-portable.exe
+            build/*.blockmap
+            build/latest.yml
+      - name: Publish tagged release
+        if: startsWith(github.ref, 'refs/tags/')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: pwsh
+        run: |
+          $tag = '${{ github.ref_name }}'
+          $version = (Get-Content package.json | ConvertFrom-Json).version
+          if ($tag -ne "v$version") { throw 'Tag must match package.json version' }
+          gh release view $tag *> $null
+          if ($LASTEXITCODE -ne 0) {
+            gh release create $tag --title $tag --notes-file RELEASE_NOTES.md --draft
+            if ($LASTEXITCODE -ne 0) { throw 'Failed to create release' }
+          }
+          $assets = Get-ChildItem build -File | Where-Object { $_.Name -match '-Setup\.exe$|-green\.7z$|-portable\.exe$|\.blockmap$|^latest\.yml$' }
+          gh release upload $tag $assets.FullName --clobber
+          if ($LASTEXITCODE -ne 0) { throw 'Failed to upload assets' }
+          gh release edit $tag --draft=false --latest
+          if ($LASTEXITCODE -ne 0) { throw 'Failed to publish release' }
