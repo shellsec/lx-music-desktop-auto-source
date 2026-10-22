@@ -8,9 +8,9 @@
 
 | 版本 | GitHub 下载 | 加速下载 |
 | --- | --- | --- |
-| Windows x64 安装版 | [直接下载](https://github.com/shellsec/lx-music-desktop-auto-source/releases/download/v2.12.6/lx-music-desktop-v2.12.6-x64-Setup.exe) | [加速下载](https://ghfast.top/https://github.com/shellsec/lx-music-desktop-auto-source/releases/download/v2.12.6/lx-music-desktop-v2.12.6-x64-Setup.exe) |
-| Windows x64 7z 解压版 | [直接下载](https://github.com/shellsec/lx-music-desktop-auto-source/releases/download/v2.12.6/lx-music-desktop-v2.12.6-win_x64-green.7z) | [加速下载](https://ghfast.top/https://github.com/shellsec/lx-music-desktop-auto-source/releases/download/v2.12.6/lx-music-desktop-v2.12.6-win_x64-green.7z) |
-| Windows x64 单文件免安装版 | [直接下载](https://github.com/shellsec/lx-music-desktop-auto-source/releases/download/v2.12.6/lx-music-desktop-v2.12.6-x64-portable.exe) | [加速下载](https://ghfast.top/https://github.com/shellsec/lx-music-desktop-auto-source/releases/download/v2.12.6/lx-music-desktop-v2.12.6-x64-portable.exe) |
+| Windows x64 安装版 | [直接下载](https://github.com/shellsec/lx-music-desktop-auto-source/releases/download/v2.12.6/lx-music-desktop-v2.12.6-x64-Setup.exe) | [加速下载](https://gh-proxy.com/https://github.com/shellsec/lx-music-desktop-auto-source/releases/download/v2.12.6/lx-music-desktop-v2.12.6-x64-Setup.exe) |
+| Windows x64 7z 解压版 | [直接下载](https://github.com/shellsec/lx-music-desktop-auto-source/releases/download/v2.12.6/lx-music-desktop-v2.12.6-win_x64-green.7z) | [加速下载](https://gh-proxy.com/https://github.com/shellsec/lx-music-desktop-auto-source/releases/download/v2.12.6/lx-music-desktop-v2.12.6-win_x64-green.7z) |
+| Windows x64 单文件免安装版 | [直接下载](https://github.com/shellsec/lx-music-desktop-auto-source/releases/download/v2.12.6/lx-music-desktop-v2.12.6-x64-portable.exe) | [加速下载](https://gh-proxy.com/https://github.com/shellsec/lx-music-desktop-auto-source/releases/download/v2.12.6/lx-music-desktop-v2.12.6-x64-portable.exe) |
 
 安装版运行 Setup.exe 安装；7z 版解压后运行 `lx-music-desktop.exe`；单文件免安装版直接运行 portable.exe。以上均为 Windows x64。
 
