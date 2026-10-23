@@ -11,8 +11,13 @@
 | Windows x64 安装版 | [直接下载](https://github.com/shellsec/lx-music-desktop-auto-source/releases/download/v2.12.6/lx-music-desktop-v2.12.6-x64-Setup.exe) | [加速下载](https://gh-proxy.com/https://github.com/shellsec/lx-music-desktop-auto-source/releases/download/v2.12.6/lx-music-desktop-v2.12.6-x64-Setup.exe) |
 | Windows x64 7z 解压版 | [直接下载](https://github.com/shellsec/lx-music-desktop-auto-source/releases/download/v2.12.6/lx-music-desktop-v2.12.6-win_x64-green.7z) | [加速下载](https://gh-proxy.com/https://github.com/shellsec/lx-music-desktop-auto-source/releases/download/v2.12.6/lx-music-desktop-v2.12.6-win_x64-green.7z) |
 | Windows x64 单文件免安装版 | [直接下载](https://github.com/shellsec/lx-music-desktop-auto-source/releases/download/v2.12.6/lx-music-desktop-v2.12.6-x64-portable.exe) | [加速下载](https://gh-proxy.com/https://github.com/shellsec/lx-music-desktop-auto-source/releases/download/v2.12.6/lx-music-desktop-v2.12.6-x64-portable.exe) |
+| macOS Apple Silicon ARM64 | [直接下载](https://github.com/shellsec/lx-music-desktop-auto-source/releases/download/v2.12.6/lx-music-desktop-2.12.6-arm64.dmg) | [加速下载](https://gh-proxy.com/https://github.com/shellsec/lx-music-desktop-auto-source/releases/download/v2.12.6/lx-music-desktop-2.12.6-arm64.dmg) |
+| Linux x64 AppImage | [直接下载](https://github.com/shellsec/lx-music-desktop-auto-source/releases/download/v2.12.6/lx-music-desktop_2.12.6_x64.AppImage) | [加速下载](https://gh-proxy.com/https://github.com/shellsec/lx-music-desktop-auto-source/releases/download/v2.12.6/lx-music-desktop_2.12.6_x64.AppImage) |
+| Linux x64 DEB | [直接下载](https://github.com/shellsec/lx-music-desktop-auto-source/releases/download/v2.12.6/lx-music-desktop_2.12.6_amd64.deb) | [加速下载](https://gh-proxy.com/https://github.com/shellsec/lx-music-desktop-auto-source/releases/download/v2.12.6/lx-music-desktop_2.12.6_amd64.deb) |
 
-安装版运行 Setup.exe 安装；7z 版解压后运行 `lx-music-desktop.exe`；单文件免安装版直接运行 portable.exe。以上均为 Windows x64。
+Windows x64：安装版运行 Setup.exe 安装；7z 版解压后运行 `lx-music-desktop.exe`；单文件免安装版直接运行 portable.exe。
+
+macOS DMG 适用于 Apple Silicon（M 系列芯片），未使用 Developer ID 签名。Linux 提供 x64 AppImage 和 DEB，尚未在 Linux 系统运行验证。各安装包的 SHA256 校验值见发布页的 `SHA256SUMS.txt`。
 
 ## 导入自定义源
 
