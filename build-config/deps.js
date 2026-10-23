@@ -40,15 +40,14 @@ const replaceSqliteLib = async(arch) => {
   await fs.promises.unlink(targetPath).catch(_ => _)
   await fs.promises.copyFile(filePath, targetPath)
 }
-exports.copyLib = async(arch = process.arch, replaceLocal = false) => {
-  if (process.platform === 'linux' || replaceLocal) {
+exports.copyLib = async(arch = process.arch, replaceLocal = false, platform = process.platform) => {
+  if (replaceLocal) {
     await replaceSqliteLib(arch)
     return
   }
-  const libPath = path.join(__dirname, `../node_modules/better-sqlite3/prebuilds/${process.platform}-${arch}.node`)
+  const libPath = path.join(__dirname, `../node_modules/better-sqlite3/prebuilds/${platform}-${arch}.node`)
   if (!fs.existsSync(libPath)) {
-    console.error(`Better-sqlite3 prebuild not found for ${process.platform}-${arch}`)
-    return
+    throw new Error(`Better-sqlite3 prebuild not found for ${platform}-${arch}`)
   }
   const targetPath = path.join(__dirname, '../node_modules/better-sqlite3/build/Release/better_sqlite3.node')
   await fs.promises.cp(libPath, targetPath, { recursive: true, force: true })

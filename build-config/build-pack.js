@@ -81,6 +81,11 @@ const winOptions = {
  * @see https://www.electron.build/configuration/configuration
  */
 const linuxOptions = {
+  // Cross-platform builds use the dependencies' bundled Node-API prebuilds.
+  npmRebuild: process.platform === 'linux',
+  deb: {
+    compression: process.platform === 'darwin' ? 'gz' : 'xz',
+  },
   linux: {
     maintainer: 'lyswhut <lyswhut@qq.com>',
     // artifactName: '${productName}-${version}.${env.ARCH}.${ext}',
